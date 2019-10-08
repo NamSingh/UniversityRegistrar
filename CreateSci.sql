@@ -1,0 +1,28 @@
+CREATE TABLE SCISTUDENT
+    AS (SELECT Studentno, StudentName, Degree, GPA
+        FROM CENTRALSTUDENT
+        WHERE Faculty = 'sci'
+    );
+
+CREATE TABLE SciPROF AS
+    (SELECT ProfName, SciOffice, SciPhone
+   FROM CENTRALPROF);
+
+CREATE TABLE SCICOURSE AS
+    (SELECT *
+    FROM COURSE
+    WHERE courseno < 500);
+
+CREATE TABLE SCICANTEACH AS
+    (SELECT *
+    FROM CANTEACH
+    WHERE courseno < 500);
+
+CREATE TABLE SCITEACHES AS
+    (SELECT *
+    FROM TEACHES
+    WHERE courseno < 500);
+
+    CREATE TABLE SCIENROLLED AS
+        (SELECT *
+        FROM ENROLLED);

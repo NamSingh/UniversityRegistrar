@@ -8,4 +8,5 @@ It is split into 3 DBs'. A central DB consisting of all information. A Faculty o
 What the files do:
 * Createxxx.sql files create the outline for the initial DDB. 
 * InsertData.SQL populates the DDB. 
-* Reconstruct.sql, reconstructs the CentralDB inserting all new information from the SciDB and EngDB. Queries.sql are examples of possible * SQL queries that can be used with this DDB.
+* Reconstruct.sql, reconstructs the CentralDB inserting all new information from the SciDB and EngDB. 
+* Queries.sql are examples of possible SQL queries that can be used with this DDB.
